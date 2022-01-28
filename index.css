@@ -28,7 +28,7 @@ img{
 .btn-new{
     display:flex;
     border: none;
-    background-color: #1bb76e;;
+    background-color: #1bb76e;
     color: #fff;
     padding:8%;
     width:100%;
@@ -47,13 +47,21 @@ img{
     gap:2%;
 }
 
-
-.in{
+.input-box{
+    display:flex;
     width:70%;
-    color:white;
     background:hsla(0,0%,100%,.25);
     border: 1px solid transparent;
+    border-radius:4px;
+    box-sizing: border-box;
+}
+
+.in{
+    width:100%;
+    color:white;
+    background:none;
     padding:8px 35px 8px 10px;
+    border: 1px solid transparent;
     outline:0 none;
     font-size: 16px;
     font-weight: 700;
@@ -64,6 +72,12 @@ img{
 
 ::placeholder {
     color: #fff;
+}
+
+.search-icon{
+    position: absolute;
+    top:30%;
+    right: 30%;
 }
 
 .bt{
@@ -90,6 +104,7 @@ img{
 
 .box{
     display:flex;
+    /* height:400px; */
     flex-direction: column;
 }
 
@@ -105,4 +120,49 @@ img{
 
 .box-image{
     width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.sign-up{
+    width: 10%;
+    display: flex;
+    border-radius: 4px;
+    margin-right: 5%;
+    background-color:#1bb76e;
+    justify-content:center;
+
+}
+
+.sign-in{
+    width: 10%;
+}
+
+.search-items{
+    display:flex;
+    flex-direction:column;
+    background:#0e172c;
+    gap: 2%;
+    width:45%;
+    margin-left:2%;
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+    top:95%;
+    height: 250px;
+    overflow:scroll;
+}
+
+.search-items>li{
+    margin-bottom: 2%;
+    padding:2%;
+    background-color: #4a5672;
+}
+
+li:hover{
+    background-color: #8f9ab4;
+    
 }

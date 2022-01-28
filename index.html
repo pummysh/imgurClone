@@ -34,20 +34,36 @@
             <div>
                <img src="./images/searchIcon.svg" alt="">
             </div>
-                <input class="in" type="text" placeholder="Images,#tags,@users oh my!">
+            
+            <div class="input-box">
+                <input oninput="debounce(main,1000)" class="in" id="in" type="text" placeholder="Images,#tags,@users oh my!">
+                
+                <span class="material-icons search-icon">
+                    search
+                </span>
+                
+            </div>
+            <div class="search-items" id="search-items">
+            </div>
+
             <div class="bt">
                 <button class="btn-go">Go add free</button>
             </div >
-                <div class="item" >
+                <!-- <div class="item" >
                     <span class="material-icons">
                         chat_bubble_outline
                     </span>
+                </div> -->
+                <div class="sign-in item">
+                    <a href="">
+                        Sign In
+                    </a>
                 </div>
-            <div class="item">
-                <span class="material-icons">
-                    notifications
-                </span>
-            </div>
+                <div class="sign-up item">
+                    <a href="#">
+                        Sign Up
+                    </a>
+                </div>
         </div>
     </div>
     
